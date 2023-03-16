@@ -1,0 +1,96 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100vh;
+  background-color: rgb(73, 70, 70);
+  z-index: 1;
+}
+
+.sidebar ul {
+  padding-top: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  color: rgb(145, 140, 140);
+  padding: 12px 12px;
+  text-align: center;
+  margin-top: 37%;
+}
+
+.main {
+  width: calc(100% - 150px);
+  margin-left: 150px;
+}
+.hamburger {
+  display: none;
+}
+
+/* / Estilos para pantallas pequeñas / */
+@media (max-width: 767px) {
+  /* / Reglas para el menú móvil / */
+  .sidebar {
+    background-color:rgb(73, 70, 70);
+ 
+  }
+  .sidebar ul.menu-mobile {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(73, 70, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .sidebar ul.menu-mobile.show {
+    transform: translateX(0);
+  }
+
+  /* / Reglas para el botón de hamburguesa / */
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: rgb(92, 0, 162);
+    border-radius: 3px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+ /* Reglas para mostrar el menú  */
+  .hamburger.active ~ .sidebar ul.menu-mobile {
+    left: 0;
+    transform: translateX(0);
+  }
+}
