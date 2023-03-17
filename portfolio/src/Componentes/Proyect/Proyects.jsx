@@ -92,7 +92,9 @@ export default function Proyect() {
           <div>
            
             <h3>Rick and Morty ApiRest </h3>
-            <p>App que consume datos de la apiRest de rick and morty</p>
+            <p>Mobile app that consumes data from the rick and morty apiRest.
+               The app has information about
+               characters, location, and episodes of the series.</p>
             <div className="imgGit">
               <a href="https://github.com/BerrazMontyn/RickAndMortyapiRest"
               target="_blank"
