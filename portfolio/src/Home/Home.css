@@ -4,9 +4,9 @@
 
 
 .welcome {
-  background-color: black;
-  height: 100%;
-  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .presentation-container {
@@ -36,14 +36,15 @@
 
 .icono-image {
  display: flex;
- margin-left: 70%;
- max-width: 80%;
- margin-top: -9%;
+ margin-left: 110%;
+ max-width: 100%;
+ margin-top: -20%;
 }
 
 .button-universal {
-  z-index: 10;
- margin-top: -30%;
+ z-index: 10;
+ margin-top: 40%;
+ margin-left: -65%;
  border-radius: 9px;
  background-color: #900e92;
  border: none;
@@ -52,6 +53,7 @@
  font-size: 20px;
  padding: 10px;
  width: 150px;
+ height: 70px;
 }
 
 .contenedor-proyect {
@@ -67,16 +69,56 @@
  .presentation {
    margin-top: 10%;
    margin-bottom: 10%;
+   
  }
 
  .button-universal {
-   margin-right: 0;
+   margin-right: 60%;
  }
 
  .contenedor-proyect {
    max-width: 80%;
  }
 }
+.icono-image {
+  width: 50%;
+  height: auto;
+  margin-right: 30%;
+}
 
+@media (max-width: 768px) {
+  .welcome-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0.5rem;
+  }
+
+  .presentation h2{
+    margin-right: 4%;
+    margin-bottom: -8%;
+    margin-top: 12%;
+    font-size: 1rem;
+  }
+  .icono-image {
+    margin-top: 50%;
+    margin-right: 57%;
+  }
+  .icono-image img{
+    width: 100%;
+    height: 100%;
+    margin-left: -70%;
+  }
+  .presentation .juanmanuel {
+    margin-top: 10%;
+    font-size: 2.5rem;
+   
+  }
+  .button-universal{
+    font-size: 15px;
+    margin-top: -25%;
+    margin-right: 5%;
+    width: 60%;
+    height: 10%;
+  }
+}
 
 

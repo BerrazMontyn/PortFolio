@@ -6,7 +6,7 @@ export default function About () {
   return (
     <div className='about-principal'>
        
-            <h1>About</h1>
+            <h1 className='abouth1'>About</h1>
             
         <div className='parrafo'>
 
@@ -19,13 +19,13 @@ export default function About () {
             Comprometido a establecer standares altos y de exito.
             </p>
 
-            <img src="https://res.cloudinary.com/dgq6bkidp/image/upload/v1678571357/DSC_2101-2_ne5rjm.jpg" 
-            width={300}
-            height={300}
+            <img src="https://res.cloudinary.com/dsjsbp6qy/image/upload/v1679013921/Dshop/Dise%C3%B1o_sin_t%C3%ADtulo__18_-removebg-preview_rjrraa.png" 
+            width={350}
+            height={350}
               alt='Mi carita de perfil' />
         </div>
-        <div> 
-        <button className='button-cv'>
+        <div  className='button-cv'> 
+        <button>
             Download Cv
         </button>
         </div>

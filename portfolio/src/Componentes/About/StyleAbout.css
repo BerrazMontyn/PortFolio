@@ -1,37 +1,49 @@
-
-.about-principal h1 {
-  margin-top: 20%;
-  margin-bottom: -20%;
+/* Estilos para pantallas grandes */
+.about-principal .abouth1{
+  font-family: 'Staatliches', cursive;
+  font-size: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -12%;
+  margin-top: 12%;
+  color: white;
 }
+  
 .parrafo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 15%;
-    margin-bottom: 13px;  
-  }
-
-  .parrafo p {
-    flex: 1 1 auto;
-    margin: 8%;
-    color: rgb(190, 160, 180);
-    font-weight: 600;
-    margin-top: 11%;
-    margin-left: 20%;
-  }
-  .parrafo img {
-    width: 25%;
-    height: 27%;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 15;
-    padding-right: 7%;
-    padding-left: 5%;
-  }
-
-.button-cv{
-  margin-top: -22%;
-  margin-right: 50%;
+  display: flex;
+  flex-direction: row; /* cambia a row */
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  max-width: 80%; 
+}
+  
+.parrafo p {
+  flex: 1 1 auto;
+  margin: 2%;
+  color: rgb(190, 160, 180);
+  font-weight: 600;
+  margin-top: 5%;
+  margin-left: 0;
+  text-align: center;
+}
+  
+.parrafo img {
+  max-width: 50%; /* añade un max-width adecuado */
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 2%; /* añade un margen izquierdo */
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+  
+.button-cv button {
+  margin-top: -15%;
+  margin-left: 45%;
   border-radius: 9px;
   background-color: #900e92;
   border: none;
@@ -40,4 +52,34 @@
   font-size: 20px;
   padding: 10px;
   width: 150px;
+}
+  
+@media (max-width: 768px) {
+  .about-principal .abouth1{
+   margin-top: 30%;
+  }
+    
+
+  .parrafo {
+    flex-direction: column; /* cambia a column */
+    align-items: center;
+  }
+  
+  .parrafo p {
+    margin-left:0;
+    text-align: center;
+  }
+  
+  .parrafo img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 400px; /* ajustar según sea necesario */
+  }
+  
+  .button-cv button {
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: auto;
+  }
 }

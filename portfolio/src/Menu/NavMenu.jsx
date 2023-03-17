@@ -1,74 +1,63 @@
-import React, { useState } from "react";
+import React from 'react';
+import {
+	FaAngleRight,
+	FaAngleLeft, 
+	FaBars
+} from 'react-icons/fa';
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./NavStyles.css";
 
-export default function NavMenu() { 
-  const [showMenu, setShowMenu] = useState(false);
+const ICON_SIZE = 20;
 
-  const handleHamburgerClick = () => {
-    setShowMenu(!showMenu);
-  };
+function NavMenu({visible, show}) {
 
-  return (
-    <div className="sidebar">
-      <ul className={showMenu ? "menu-mobile" : ""}>
-        <li>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2647/2647350.png"
-            width={100}
-            height={100}
-            alt="Logo tipo "
-          />
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => setShowMenu(false)}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="skills"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => setShowMenu(false)}
-          >
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => setShowMenu(false)}
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link onClick={() => setShowMenu(false)}>English</Link>
-        </li>
-      </ul>
-      <div className="hamburger" onClick={handleHamburgerClick}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
-    </div>
+	return (
+		<>
+			<div className="mobile-nav">
+				<button
+					className="mobile-nav-btn"
+					onClick={() => show(!visible)}
+				>
+					<FaBars size={24}  />
+				</button>
+			</div>
+			<nav className={!visible ? 'navbar' : ''}>
+				<button
+					type="button"
+					className="nav-btn"
+					onClick={() => show(!visible)}
+				>
+					{ !visible
+						? <FaAngleRight size={30} /> : <FaAngleLeft size={30} />}
+				</button>
+				<div>
+					<Link
+						className="logo"
+						to="/"
+					>
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/2647/2647350.png"
+								alt="logo"
+							/>
+					</Link>
+					<div className="links nav-top">
+						<Link to="about" className="nav-link">
+							
+							<span>Abaout</span>
+						</Link>
+						<Link to="skills" className="nav-link">
+							
+							<span>Skills</span>
+						</Link>
+						<Link to="projects" className="nav-link">
+							
+							<span>Proyectos</span> 
+						</Link>
+					</div>
+				</div>
+			</nav>
+		</>
   );
 }
 
+export default NavMenu;

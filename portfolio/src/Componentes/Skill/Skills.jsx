@@ -8,14 +8,15 @@ export default function Skills() {
     return(
         <div> 
             <div className="titulo-skill">
-            <h1>Skills</h1>
+            <h1 className="skillsh1">Skills</h1>
 
             </div>
 
      <div className="contenedor">
 
      <div className="square">
-        <img  
+        <img 
+        className="icono-titulo" 
         src="https://cdn-icons-png.flaticon.com/512/2797/2797418.png"
         alt="lengugae"
         width={55}
@@ -61,6 +62,7 @@ export default function Skills() {
 
      <div className="square">
         <img 
+        className="icono-titulo" 
         src="https://cdn-icons-png.flaticon.com/512/3270/3270816.png"
         alt="libraries"
         width={55}
@@ -93,6 +95,7 @@ export default function Skills() {
 
      <div className="square">
      <img 
+     className="icono-titulo" 
         src="https://cdn-icons-png.flaticon.com/512/6742/6742629.png"
         alt="libraries"
         width={55}
