@@ -38,7 +38,7 @@
  display: flex;
  margin-left: 110%;
  max-width: 100%;
- margin-top: -20%;
+ margin-top: -15%;
 }
 
 .button-universal {
@@ -55,6 +55,10 @@
  width: 150px;
  height: 50px;
 }
+.ContacA {
+ margin-top: 30%;
+ margin-left: -52%;
+}
 
 .contenedor-proyect {
  display: flex;
@@ -62,6 +66,7 @@
  margin: 0 auto;
  max-width: 90%;
 }
+
 
 @media only screen and (min-width: 768px) {
  /* Estilos para pantallas más grandes */
@@ -75,6 +80,7 @@
  .button-universal {
    margin-right: 60%;
  }
+ 
 
  .contenedor-proyect {
    max-width: 80%;
@@ -107,6 +113,10 @@
     height: 100%;
     margin-left: -70%;
   }
+  .ContacA {
+    margin-top: 127%;
+    margin-left: -55%;
+   }
   .presentation .juanmanuel {
     margin-top: 10%;
     font-size: 2.5rem;
@@ -115,9 +125,10 @@
   .button-universal{
     font-size: 15px;
     margin-top: -25%;
-    margin-right: 5%;
-    width: 60%;
-    height: 10%;
+    margin-right: 9%;
+    margin-left: -12%;
+    width: 85%;
+    height: 100%;
   }
 }
 

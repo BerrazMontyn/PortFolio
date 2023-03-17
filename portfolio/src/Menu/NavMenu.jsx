@@ -43,7 +43,7 @@ function NavMenu({visible, show}) {
 					<div className="links nav-top">
 						<Link to="about" className="nav-link">
 							
-							<span>Abaout</span>
+							<span>About</span>
 						</Link>
 						<Link to="skills" className="nav-link">
 							
@@ -51,7 +51,7 @@ function NavMenu({visible, show}) {
 						</Link>
 						<Link to="projects" className="nav-link">
 							
-							<span>Proyectos</span> 
+							<span>Projects</span> 
 						</Link>
 					</div>
 				</div>

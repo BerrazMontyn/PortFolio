@@ -23,7 +23,13 @@ export default function Home() {
             height="25%"
             alt="Logo cohete"
           />
+          <a className="ContacA"
+          href="mailto:juanberrazmontyn@hotmail.com"
+          target="_blank"
+          rel="noreferrer" >
+
         <button className="button-universal">Contact Me</button>
+          </a>
         </div>
 
 

@@ -25,10 +25,37 @@ export default function About () {
               alt='Mi carita de perfil' />
         </div>
         <div  className='button-cv'> 
-        <button>
-            Download Cv
-        </button>
+        <a href='https://drive.google.com/file/d/1Yi9wbWb3BoeSxbdF1AyzGFf7tFrcbD-M/view?usp=sharing'
+        target="_blank"
+        rel="noreferrer"
+        download="Cv Juancito" >
+            
+        <button>Download Resume</button>
+          </a>
         </div>
+        <div className='contacI'>
+          <a href='https://www.linkedin.com/in/juan-manuel-berraz-montyn-b25962194/'
+          target="_blank"
+          rel="noreferrer"
+          >
+            <img className='iconcontent' 
+            src='https://cdn-icons-png.flaticon.com/512/1383/1383262.png'
+            alt='logo-linke'
+            width={55}
+            height={45} />
+
+            <a href='https://github.com/BerrazMontyn'
+            target="_blank"
+            rel="noreferrer" >
+              <img className='iconcontent'
+              src="https://cdn-icons-png.flaticon.com/512/270/270798.png" 
+              alt="logo-git"
+              width={55}
+              height={45} />
+            </a>
+          </a>
+        </div>
+        
     </div>
   )
 }
