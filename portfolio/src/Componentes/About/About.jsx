@@ -14,7 +14,7 @@ export default function About () {
             Durante mis años de experiencia fui trabajando en mi desarrollo personal y profesional,
             capacitándome y colaborando en diferentes organizaciones.
             Hoy en día, estoy en búsqueda de un puesto en el que pueda utilizar mis habilidades
-            y mi pasión profesional que tanto disfruto y llevo a cabo todos los das.
+            y mi pasión profesional que tanto disfruto y llevo a cabo todos los días.
             Soy ambicioso, resolutivo, capaz de trabajar de manera individual y en equipo.
             Comprometido a establecer standares altos y de exito.
             </p>
