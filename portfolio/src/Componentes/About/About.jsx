@@ -25,7 +25,7 @@ export default function About () {
               alt='Mi carita de perfil' />
         </div>
         <div  className='button-cv'> 
-        <a href='https://drive.google.com/file/d/1Yi9wbWb3BoeSxbdF1AyzGFf7tFrcbD-M/view?usp=sharing'
+        <a href='https://drive.google.com/file/d/1T_sg9Bbswjv4j4VbOOtGF0T_niKYoP9f/view?usp=share_link'
         target="_blank"
         rel="noreferrer"
         download="Cv Juancito" >
@@ -34,7 +34,7 @@ export default function About () {
           </a>
         </div>
         <div className='contacI'>
-          <a href='https://www.linkedin.com/in/juan-manuel-berraz-montyn-b25962194/'
+          <a href='https://www.linkedin.com/in/juan-manuel-berraz-montyn/'
           target="_blank"
           rel="noreferrer"
           >
